@@ -1,0 +1,27 @@
+# ----------------------------------------
+# Define todas las librerías necesarias para ejecutar
+# el pipeline ETL completo, incluyendo pruebas unitarias.
+# ----------------------------------------
+
+# ------- Manipulación de datos -------
+pandas                        # Librería para manejo de DataFrames, transformación, limpieza, etc.
+
+# -------  API Requests -------
+requests                      # Para hacer llamadas HTTP a la API REST
+
+# ===  Base de datos -------
+sqlalchemy                   # ORM para interactuar con SQLite o PostgreSQL de forma abstracta
+psycopg2-binary              # Driver necesario para conectarse a PostgreSQL
+
+# -------  Retry automático -------
+tenacity                     # Permite reintentar automáticamente llamadas a la API en caso de fallos
+
+# -------  Variables de entorno -------
+python-dotenv                # Carga el archivo .env para obtener configuraciones sensibles como tokens o URIs
+
+# -------  Testing -------
+pytest                       # Framework de testing para asegurar que la transformación funcione correctamente
+
+# -------  Orquestador (opcional) -------
+# apache-airflow==2.8.1                   # Orquestador para ejecutar DAGs de ETL automáticamente
+# apache-airflow-providers-postgres==5.10.0  # Conector PostgreSQL para Airflow
