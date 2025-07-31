@@ -93,9 +93,8 @@ Por ejemplo: PS C:\Users\USUARIO\Documents\ETL_PROJECT> python run_pipeline.py
 - Extracción de productos y compras desde la API
 - Transformación en tres tablas limpias
 - Carga de datos en PostgreSQL (o SQLite)
-
-
-	6. Ejecutar pruebas
+  
+	  6. Ejecutar pruebas
 
 pytest tests/
 
@@ -120,7 +119,7 @@ Luego, activa el DAG desde la interfaz web o con:
 
 | Herramienta        | Rol dentro del proyecto                            |
 |--------------------|----------------------------------------------------|
-| **Python **       | Lenguaje base para el desarrollo del pipeline      |
+| **Python**       | Lenguaje base para el desarrollo del pipeline      |
 | `pandas`           | Transformación y manipulación de datos tabulares  |
 | `requests`         | Llamadas HTTP a la API REST                        |
 | `sqlalchemy`       | Conexión y escritura a bases de datos relacionales|
