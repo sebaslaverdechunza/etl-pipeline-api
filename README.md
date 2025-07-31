@@ -15,21 +15,24 @@ Este proyecto consiste en la construcción de un pipeline ETL para integrar dato
 ```text
 ETL_PROJECT/
 │
-├── etl/                      # Módulos del proceso ETL
+├── etl/                         # Módulos del proceso ETL
 │   ├── __init__.py
-│   ├── config.py             # Configuración global (DB, API)
-│   ├── extract.py            # Extracción de datos desde la API
-│   ├── transform.py          # Transformación de datos en DataFrames
-│   └── load.py               # Carga de datos a la base de datos
+│   ├── config.py                # Configuración global (DB, API)
+│   ├── extract.py               # Extracción de datos desde la API
+│   ├── transform.py             # Transformación de datos en DataFrames
+│   └── load.py                  # Carga de datos a la base de datos
+│
+├── dag/
+│   └── etl_pipeline_dag.py      # DAG de Apache Airflow (automatización diaria)
 │
 ├── tests/
-│   └── test_transform.py     # Tests unitarios para la capa de transformación
+│   └── test_transform.py        # Tests unitarios para la capa de transformación
 │
-├── run_pipeline.py           # Script principal para ejecutar el flujo ETL
-├── requirements.txt          # Dependencias del proyecto
-├── .env                      # Variables de entorno (token, conexión BD)
-├── README.md                 # Documentación del proyecto
-├── etl_project.db            # Base de datos SQLite (si se usa localmente)
+├── run_pipeline.py              # Script principal para ejecutar el flujo ETL
+├── requirements.txt             # Dependencias del proyecto
+├── .env                         # Variables de entorno (token, conexión BD)
+├── README.md                    # Documentación del proyecto
+├── etl_project.db               # Base de datos SQLite (si se usa localmente)
 └── Capturas de pantalla del pipeline  # Evidencia visual del funcionamiento
 ```
 
